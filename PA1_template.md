@@ -59,7 +59,7 @@ We'll then create a histogram of the data in the base plotting system.
 hist(y[[1]], 11, xlab = "Steps Per Day", main = "")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-4](Rplot.png) 
 
 
 ## What is the average daily activity pattern?
@@ -96,7 +96,7 @@ Now we'll plot the data using the base plotting system.
 plot(y[[2]], y[[1]], type = "l", xlab = "Time", ylab = "Average Steps")
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7.png) 
+![plot of chunk unnamed-chunk-7](Rplot01.png) 
 
 
 Finally, we'll figure out which time has the highest number of average steps. We'll do this by having R print only that subset of the data.
@@ -152,7 +152,7 @@ We'll also use the same code to produce the histogram.
 hist(y[[1]], 11, xlab = "Steps Per Day", main = "")
 ```
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11.png) 
+![plot of chunk unnamed-chunk-11](Rplot02.png) 
 
 
 We can remove "na.rm=T" from our lines to get the mean and median.
@@ -253,5 +253,5 @@ Finally, we'll make a panel plot of the data using the lattice plotting system.
 xyplot(Steps ~ Time | Day, data = Total, type = "l")
 ```
 
-![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17.png) 
+![plot of chunk unnamed-chunk-17](Rplot03.png) 
 
